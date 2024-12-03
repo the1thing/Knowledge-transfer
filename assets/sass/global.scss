@@ -1,0 +1,112 @@
+@import "_breakpoints.scss";
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 16px;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	font-family: "worksans-regular", sans-serif;
+	@include phone {
+		overflow-x: hidden;
+	}
+}
+
+strong {
+	font-family: "worksans-bold", sans-serif;
+}
+
+em {
+	font-family: "worksans-semibold", sans-serif;
+}
+
+.spacer {
+	height: 72px;
+}
+
+.spacer-mini {
+	height: 56px;
+}
+
+.row-no-gutter {
+	margin-right: 0;
+	margin-left: 0;
+
+	[class*="col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 0;
+	li {
+		list-style: none;
+	}
+	&.listing {
+		display: unset !important;
+		li {
+			background: transparent !important;
+			padding: 0 !important;
+			text-align: left !important;
+		}
+	}
+}
+
+ol {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+
+a {
+	text-decoration: none;
+	z-index: 9;
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+	&:hover {
+		color: inherit;
+	}
+}
+
+.f-22 {
+	font-size: 22px;
+}
+
+table {
+	width: 60%;
+	&.credential-table{
+		width: 100%;
+	}
+	tr {
+		border: 1px solid;
+		font-size: 22px;
+		td, th {
+			padding: 12px;
+			border-right: 1px solid;
+			a {
+				color: inherit;
+			}
+		}
+		th {
+			font-family: "worksans-semibold";
+		}
+		td {
+			font-family: "worksans-regular";
+		}
+	}
+}
+
+.main-anchor{
+	color: inherit;
+	svg{
+		width: 200px;
+	}
+}
+

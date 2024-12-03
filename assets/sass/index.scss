@@ -1,0 +1,91 @@
+.container-homepage {
+	padding: 80px 0 80px 0;
+	background-size: contain !important;
+	background-position: bottom center !important;
+	background-repeat: no-repeat !important;
+	// height: 100%;
+	.marquee-effect {
+		padding: 80px 0 0 0;
+		margin-bottom: 80px;
+	}
+	.projects {
+		ul {
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			align-items: flex-start;
+			padding: 0;
+			list-style: none;
+			flex-wrap: wrap;
+			gap: 64px;
+			li {
+				list-style: none;
+				width: auto;
+				padding: 24px 24px;
+				background: #333;
+				border-radius: 8px;
+				text-align: center;
+				cursor: pointer;
+				a {
+					display: block;
+					color: #fff;
+					font-family: "worksans-regular";
+					cursor: pointer;
+					text-decoration: none;
+				}
+				&:hover {
+					// background: linear-gradient(90deg,#ef8081 -39.31%,#f63132 20.53%,#9f1689 79.22%);
+					background: linear-gradient(
+  to bottom,
+  rgba(80, 80, 80, 0.8), /* Darker gray with more opacity */
+  rgba(150, 150, 150, 0.9) /* Deeper gray with higher opacity */
+);
+
+					a {
+						text-decoration: none;
+					}
+					box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+				}
+			}
+	&.html_types{
+		// grid-template-columns: repeat(5,1fr);	
+		li{
+			a{
+				white-space: nowrap;
+			}
+		}
+		}
+		}
+		
+	}
+	.all-repos{
+		.cta-wrapper {
+			.bttn-primary {
+				// background: var(--dark_pink_gradient);
+				// border-image: var(--dark_pink_gradient) 10;
+				background: linear-gradient(
+  to bottom,
+  rgba(80, 80, 80, 0.8), /* Darker gray with more opacity */
+  rgba(150, 150, 150, 0.9) /* Deeper gray with higher opacity */
+);
+
+//     border-image: linear-gradient(
+//   to bottom,
+//   rgba(80, 80, 80, 0.8), /* Darker gray with more opacity */
+//   rgba(150, 150, 150, 0.9) /* Deeper gray with higher opacity */
+// );
+
+				// border-style: solid;
+				border-width: 1px;
+				border-radius: 8px;
+				color: var(--white);
+				padding: 24px 54px;
+				// width: 189px;
+				font-family: "worksans-medium",sans-serif;
+				&:hover{
+				box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+			}
+			}
+			
+		}
+	}
+}
